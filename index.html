@@ -5,71 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
         <link rel="icon" href="./images/fav_icon.png">
+
+
+        <link rel="stylesheet" href="navBar.css">
     <title>BeSocial</title>
 </head>
 <body>
-    <div class="navBar">
-        <h1 class="title">BeSocial</h1>
-       
-        <a  class="a1" href="#Home">Inicio</a>
-        <a class="a1" href="#AboutUs">Sobre nós</a>
-        <a class="a1" href="#SoftSkills">SoftSkills</a>
-        <a class="a1" href="Apresentation">Apresentações</a>
-        <a class="a1" href="#Contact">Contato</a>
-    </div>
+   <header> 
+    <div class="body0">
+    <h1 class="title">BeSocial</h1>
+<nav class="topnav" id="myTopnav">
+<a href="#Home" class="active">Inicio</a>
+<a href="#AboutUs">Sobre nós</a>
+<a href="#SoftSkills">Soft Skills</a>
+<a href="#Apresentation">Apresentações</a>
+<a href="https://drive.google.com/file/d/1_aDAYiLm-RFyDNMMzzJrUSko2Rs_2qvh/view?usp=drive_link" target="_blank" >Relatório</a>
+<a href="#Contact">Contato</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <img class="iconImg" src="./images/2311531.png">
+  <i class="fa fa-bars"></i>
+</a>
+</nav>
+</div>
+</header>
+   
+    
    <div id="Home" class="body1">
-    <p class="text1">Cerca de <span class="porcentege">45%</span> das concentrações ruins são 
-        devido a falta de Soft Skills e <span class="porcentege">30%</span> das empresas diz que é mais 
-        importante contratar as pessoas por suas Soft Skills.</p>
+    <p class="text1">Cerca de <span class="porcentege">45%</span> das contratações ruins são 
+        devido a falta de soft skills e <span class="porcentege">30%</span> das empresas diz que é mais 
+        importante contratar as pessoas por suas soft skills.</p>
     <img class="imgSoftSkills" src="./images/Soft skills-rafiki.svg" alt="">
    </div>
    <div id="AboutUs" class="body2">
     <img class="imgSoftSkills" src="./images/Conference-amico.svg" alt="">
-    <p class="text2">A <span class="about">BeSocial</span> é uma Startup recem criada com o intuito de ajudar
-        empresas a desenvolverem as melhores <span class="about">SoftSkills</span> por meio de metórias e dinâmicas.
-        Assim desenvolvendo uma melhor relação da equipe e trazendo o melhor desempenho possível
+    <p class="text2"><span class="about">BeSocial</span> é uma startup recém criada com o intuito de ajudar
+        empresas a desenvolverem as melhores <span class="about">soft skills</span> por meio de mentorias.
+        Assim desenvolvendo uma melhor relação da equipe e trazendo o melhor desempenho possível,
         não só tendo pessoas tecnicamente hábeis aos projetos como também mentalmente saudáveis e confortáveis para
-        buscar por resultados e pensar como um <span class="about">Time</span>.
+        buscar por resultados e pensar como um <span class="about">time</span>.
     </p>
    </div>
    <div id="SoftSkills" class="body3" >
     <div class="images">
     <img class="team" id="imgGoals" src="./images/Team goals-amico.svg" alt="">
     </div>
-    <p class="text3">As Soft Skills são um conjunto de hablidades comportamentais relacionadas a interação em grupos e como uma pessoa lida com duas próprias emoções.
-    Quanto mais positivo a forma de lidar com situações ambientais e psicológicas, maiores são suas soft skills.
+    <p class="text3">As soft skills são um conjunto de habilidades comportamentais relacionadas a interação em grupos e como uma pessoa lida com suas próprias emoções.
+    Quanto mais positivo a forma de lidar com situações conflituosas, maiores são suas soft skills.
     Elas normalmente estão ligadas intimamente a personalidade e outros fatores emocionais construídos ao longo da vida.
-    Tendo isso em vista sabemos por que Soft Skills são tão valorizadas. </p>
+    Tendo isso em vista, sabemos por que as soft skills são tão valorizadas no ambiente de trabalho. </p>
    </div>
    <div id="Apresentation" class="body4">
     <h2 class="apresentation">APRESENTAÇÕES</h2>
-    <p class="text4">Fique de olho nas proximas apresentações</p>
+    <p class="text4">Fique de olho nas próximas apresentações</p>
     <div class="body4s2">
         <img class="imgApresentation" src="./images/Digital presentation-rafiki.svg" alt="">
         <div class="body4s3"> 
         <p class="text5">Dia <span class="porcentege">05/07/2024</span></p>
-        <p class="text5">Sera feito de forma online através dos <span class="porcentege">Zoom</span>.</p>
+        <p class="text5">Será feito de forma online através do <span class="porcentege">Zoom</span>.</p>
         </div>
     </div>
    </div>
    <div id="Contact" class="body5">
     <h3 class="contact">Entre em contato para saber mais.</h3>
-    <div class="button1"><p>E-mail</p></div>
+    <a href="mailto:startupbesocial@gmail.com"><div class="button1" ><p>E-mail</p></div></a>
     <div class="button2"><p>WhatsApp</p></div>
     <div class="button3"><p>Instagram</p></div>
    </div>
-   <div class="footer">
-    <h1 class="titleFooter">BeSocial</h1>
-    <p class="textFooter">Conectando pessoas.</p>
-    <p class="emailFooter">startupbesocial@gmail.com</p>
-   </div>
+   <footer>
+    <div class="footer">
+        <h1 class="titleFooter">BeSocial</h1>
+        <p class="textFooter">Conectando pessoas.</p>
+        <p class="emailFooter">startupbesocial@gmail.com</p>
+       </div>
+   </footer>
+
+
    <script>
     function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
       } else {
-        x.style.display = "block";
+        x.className = "topnav";
       }
     }
     </script>

@@ -140,6 +140,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 100px;
 }
 
 .apresentation {
@@ -268,6 +269,10 @@
   margin-top: 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 850px) {
   * {
     padding: 0;
@@ -335,6 +340,7 @@
     background-color: #164af5;
     transition: 0.5s;
     border-radius: 30px;
+    margin: 20px;
   }
 
   .body1 {
