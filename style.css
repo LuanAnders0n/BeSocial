@@ -183,8 +183,7 @@
 }
 
 .button1,
-.button2,
-.button3 {
+.button2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -226,17 +225,6 @@
   transition: 0.5s;
   color: #f9f9f9;
   background-color: #24b93d;
-}
-
-.button3 {
-  color: #f9f9f9;
-  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
-}
-
-.button3:hover {
-  transition: 0.5s;
-  background-color: #24b93d;
-  background: linear-gradient(to right, #8945b6, #fa2b2b, #f8b455);
 }
 
 .footer {
